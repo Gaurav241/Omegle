@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar { 
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .content {
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .content {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .content {
+        height: 25vh;
+    }
+}
